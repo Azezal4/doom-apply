@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+set -e
+
+
+# * REPO
+echo '* REPO'
+
+mkdir --parent assets srv db
+
+test -d venv || python3 -m venv venv
+
+venv/bin/pip install --requirement requirements.txt
+
+
+
+# * VENDORS
+
+# ./vendors/main.sh
+
+
+# Local Variables:
+# mode: shell-script
+# End:
